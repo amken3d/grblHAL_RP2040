@@ -128,6 +128,17 @@
         "trinamic_uart_addr": 1
       }
     },
+    {
+      "name": "Amken Bunny",
+      "symbol": "BOARD_AMKEN_BUNNY",
+      "URL": "https://www.amken3d.com",
+      "MAP": "amken_bunny_map.h",
+      "caps": {
+        "axes": 4,
+        "trinamic": 2209,
+        "trinamic_uart_addr": 1
+      }
+    },
 	{
       "name": "Generic",
       "symbol": "",

@@ -29,6 +29,7 @@
 //#define BOARD_BTT_SKR_PICO_10 // incomplete and untested!
 //#define BOARD_CNC_BOOSTERPACK
 //#define BOARD_CITOH_CX6000    // C.ITOH CX-6000 HPGL plotter
+#define BOARD_AMKEN_BUNNY
 //#define BOARD_GENERIC_4AXIS
 //#define BOARD_MY_MACHINE      // Add my_machine_map.h before enabling this!
 
@@ -95,7 +96,7 @@
 // of axes can be enabled here.
 //#define X_GANGED             1
 //#define X_AUTO_SQUARE        1
-//#define Y_GANGED             1
+#define Y_GANGED             1
 //#define Y_AUTO_SQUARE        1
 //#define Z_GANGED             1
 //#define Z_AUTO_SQUARE        1
@@ -109,12 +110,12 @@
 //#define _WIZCHIP_ 5500
 
 #if WIFI_ENABLE || ETHERNET_ENABLE || WEBUI_ENABLE
-#define TELNET_ENABLE        1 // Telnet daemon - requires WiFi streaming enabled.
-#define WEBSOCKET_ENABLE     1 // Websocket daemon - requires WiFi streaming enabled.
+//#define TELNET_ENABLE        1 // Telnet daemon - requires WiFi streaming enabled.
+//#define WEBSOCKET_ENABLE     1 // Websocket daemon - requires WiFi streaming enabled.
 //#define MDNS_ENABLE          0 // mDNS daemon. Do NOT enable here, enable in CMakeLists.txt!
 //#define SSDP_ENABLE          1 // SSDP daemon - requires HTTP enabled.
 #if SDCARD_ENABLE || WEBUI_ENABLE
-#define FTP_ENABLE           1 // Ftp daemon - requires SD card enabled.
+//#define FTP_ENABLE           1 // Ftp daemon - requires SD card enabled.
 //#define HTTP_ENABLE          1 // http daemon - requires SD card enabled.
 //#define WEBDAV_ENABLE        1 // webdav protocol - requires http daemon and SD card enabled.
 #endif

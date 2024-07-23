@@ -80,7 +80,7 @@ void tmc_uart_write (trinamic_motor_t driver, TMC_uart_write_datagram_t *dgr)
     while(tmc_uart.get_tx_buffer_count());
 }
 
-#if defined(BOARD_BTT_SKR_PICO_10)
+#if defined(BOARD_BTT_SKR_PICO_10) || defined(BOARD_AMKEN_BUNNY)
 
 void driver_preinit (motor_map_t motor, trinamic_driver_config_t *config)
 {

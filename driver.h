@@ -140,6 +140,8 @@
   #include "picobob_dlx_g540_map.h"      
 #elif defined(BOARD_BTT_SKR_PICO_10)
   #include "btt_skr_pico_10_map.h"
+#elif defined(BOARD_AMKEN_BUNNY)
+  #include "amken_bunny_map.h"
 #elif defined BOARD_CITOH_CX6000
   #include "citoh_cx6000_map.h"
 #elif defined(BOARD_MY_MACHINE)
