@@ -80,6 +80,7 @@ else()
     PCA9654E.c
     pico_cnc.c
     btt_skr_pico_10.c
+    amken_bunny.c
     ioports.c
     ioports_analog.c
     tmc_uart.c

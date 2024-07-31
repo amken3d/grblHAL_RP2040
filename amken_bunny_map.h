@@ -66,38 +66,34 @@
 #define M3_STEP_PIN                 23
 #define M3_DIRECTION_PIN            13
 #define M3_ENABLE_PIN               8
-#define M3_LIMIT_PIN                22  // Mapped to ES4
+#define M3_LIMIT_PIN                27  // Sqared Y1  Mapped to TH1
 #endif
 
 // Define homing/hard limit switch input pins.
-#define X_LIMIT_PIN                 15  // Mapped to ES1
-#define Y_LIMIT_PIN                 16  // Mapped to ES2
-#define Z_LIMIT_PIN                 6   // Mapped to ES3
+#define X_LIMIT_PIN                 16  // Mapped to ES1
+#define Y_LIMIT_PIN                 15  // Mapped to ES2
+#define Y_LIMIT_PIN_MAX             26  // Mapped to TH2
+#define Z_LIMIT_PIN                 22   // Mapped to ES4
 
 // Define driver spindle pins
 // Define spindle enable and spindle direction output pins.
 #define SPINDLE_PORT            GPIO_OUTPUT
-#define SPINDLE_ENABLE_PIN      17  // Mapped to HB
+#define SPINDLE_ENABLE_PIN      7  // Mapped to HB
 #define SPINDLE_PWM_PORT        GPIO_OUTPUT
-#define SPINDLE_PWM_PIN         AUXOUTPUT1_PIN
+#define SPINDLE_PWM_PIN         AUXOUTPUT1_PIN // Mapped to Fan1
 
-#define AUXINPUT0_PIN           18 // Y-
-#define AUXINPUT1_PIN           19 // Y+
-#define AUXINPUT2_PIN           20 // X-
-#define AUXINPUT3_PIN           21 // X+
-#define AUXINPUT4_PIN           26 // Pen U/D
-#define AUXINPUT5_PIN           22 // Online
+
 
 #define AUXOUTPUT0_PORT         GPIO_OUTPUT
-#define AUXOUTPUT0_PIN          7  // MApped to HE
+#define AUXOUTPUT0_PIN          17  // MApped to HE
 #define AUXOUTPUT1_PORT         GPIO_OUTPUT
 #define AUXOUTPUT1_PIN          14 // Mapped to Fan1
 #define AUXOUTPUT2_PORT         GPIO_OUTPUT
 #define AUXOUTPUT2_PIN          11 // Mapped to Fan2
 
-#define RESET_PIN               26 // Mapped to TH1 (Removed ADC circuit)
-#define PROBE_PIN               27 // Mapped to TH1 (Removed ADC circuit)
-#define FEED_HOLD_PIN           0  // Mapped to RPI Port TX
-#define CYCLE_START_PIN         1  // Mapped to RPI Port RX
+#define RESET_PIN               1 // Mapped to RPI Port TX
+#define PROBE_PIN               6 // Mapped to ES4
+// #define FEED_HOLD_PIN           0  // Mapped to RPI Port TX
+#define CYCLE_START_PIN         0  // Mapped to RPI Port RX
 
 
